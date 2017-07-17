@@ -234,6 +234,19 @@ $ git rebase -i HEAD~<x>
 # abort
 $ git rebase --abort
 $ git merge --abort
+
+# to resolve rebase conflicts, first resolve any code conflicts by either accepting their or your chanages
+# then add those files to staging, you can see them by $ git status
+$ git add .
+# after that continue rebasing
+$ git rebase --continue
+# if all you code changes are replaced (by their changes), just skip rebase and apply your code changes manually after that 
+$ git rebase --skip
+# updat remote with
+# force push local branch to remote, only if you're the only one working on the branch
+$ git push -f <remote> <branchName>
+# force with lease otherwise
+$ git push --force-with-lease <remote> <branchName>
 ```
 
 #### Tags

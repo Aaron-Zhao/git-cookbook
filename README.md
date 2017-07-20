@@ -231,6 +231,9 @@ $ git rebase <branchName>
 # squash x number of commits into one, follow the instructions to complete it
 $ git rebase -i HEAD~<x>
 
+# do if you want update the timestamp after squashing
+$ git commit --amend --date="now"
+
 # abort
 $ git rebase --abort
 $ git merge --abort

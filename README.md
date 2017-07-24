@@ -403,3 +403,9 @@ $ git blame [file]
 $ git blame [file] -l
 $ git blame [file] -l > file_change_log.txt
 ```
+
+#### Other
+git ssh config file
+```sh
+C:\Program Files\Git\etc\ssh\ssh_config
+```

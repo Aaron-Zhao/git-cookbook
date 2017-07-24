@@ -238,6 +238,12 @@ $ git commit --amend --date="now"
 $ git rebase --abort
 $ git merge --abort
 
+# show files in conflicts
+$ git diff --name-only --diff-filter=U
+# add it to an alias so you can reuse it
+$ git config --global alias.conflicts "diff --name-only --diff-filter=U"
+$ git conflicts
+
 # to resolve rebase conflicts, first resolve any code conflicts by either accepting their or your changes
 # then add those files to staging, you can see them by $ git status
 $ git add .

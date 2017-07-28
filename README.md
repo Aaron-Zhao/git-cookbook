@@ -32,6 +32,38 @@ $ git remote add <aliasName> <remoteAddress>
 $ git remote add origin "git@github.com:Aaron-Zhao/git-cookbook.git"
 ```
 
+
+#### Create a branch
+
+```sh
+$ git branch <newBranchName>
+```
+
+#### Checkout a branch
+
+```sh
+$ git checkout <branchName>
+```
+
+#### Create a branch and check it out right after that
+
+```sh
+$ git checkout -b <newBranchName>
+```
+
+#### Checkout a remote branch
+
+```sh
+$ git fetch
+$ git checkout <branchName>
+```
+
+#### Show branches
+
+```sh
+$ git branch
+```
+
 #### Adding a file and commit with comment
 
 ```sh
@@ -69,40 +101,10 @@ $ git commit --amend 'New commit message'
 $ git status
 ```
 
-#### Show branches
-
-```sh
-$ git branch
-```
-
-#### Checkout a branch
-
-```sh
-$ git checkout <branchName>
-```
-
-#### Create a branch
-
-```sh
-$ git branch <newBranchName>
-```
-
-#### Create a branch and check it out right after that
-
-```sh
-$ git checkout -b <newBranchName>
-```
-
 #### Push your branch to remote
 
 ```sh
 $ git push <remoteAliasName> <localBranchName>
-```
-
-#### Checking status
-
-```sh
-$ git status
 ```
 
 #### .gitignore
@@ -143,10 +145,11 @@ $ git revert HEAD
 
 ```sh
 # list
+$ git remote
 $ git ls-remote
 
 # verbose
-# git remote -v
+$ git remote -v
 
 # add a new remote repository of your project
 $ git remote add <aliasName> <remoteAddress>

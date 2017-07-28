@@ -258,6 +258,14 @@ $ git push -f <remote> <branchName>
 $ git push --force-with-lease <remote> <branchName>
 ```
 
+#### Cherry Pick
+
+```sh
+$ git cherry-pick <commit>
+```
+
+For advanced cherry-pick refer to [this docs](https://git-scm.com/docs/git-cherry-pick) for more details.
+
 #### Tags
 
 ```sh

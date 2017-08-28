@@ -226,7 +226,10 @@ $ git branch -a --merged
 $ git branch -a --no-merged
 
 # merge a branch
-$ git merge branch <branchName>
+$ git merge <branchName>
+
+# merge a branch with message
+$ git merge <branchName> -m "Your merge message"
 
 # rebase onto a branch
 $ git rebase <branchName>

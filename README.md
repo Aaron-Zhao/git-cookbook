@@ -119,6 +119,9 @@ Ignoring files (not to be checked in git), refer to [this docs](https://git-scm.
 # To UNDO local unstaged file changes only (for tracked files)
 $ git checkout .
 
+# To UNDO a local unstaged file changes
+$ git checkout -- <file>
+
 # To UNDO staged file changes or new files only
 $ git reset .
 $ git reset <file>
@@ -139,6 +142,13 @@ $ git reset HEAD~<x>
 
 # push undo to remote
 $ git revert HEAD
+```
+
+#### Revert
+
+```sh
+# This create a new commit that reverts all changes made by <commit>
+$ git revert <commit>
 ```
 
 #### Working with remote

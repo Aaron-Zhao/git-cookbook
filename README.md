@@ -3,8 +3,11 @@
 
 > A repository for commonly used git commands.
 
-#### Git config global, local, list
+#### Git config edit, global, local, list, caching pwd
 
+```sh
+$ git config --global -e
+```
 ```sh
 $ git config --global user.name "User Name"
 
@@ -17,6 +20,14 @@ $ git config user.email "user_email@domain.com"
 ```
 ```sh
 $ git config -l
+```
+```sh
+# Windows
+$ git config --global credential.helper wincred
+# Mac
+$ git config --global credential.helper osxkeychain
+# Linux
+$ git config --global credential.helper cache
 ```
 
 #### Initializing
@@ -236,7 +247,10 @@ $ git branch -a --merged
 $ git branch -a --no-merged
 
 # merge a branch
-$ git merge branch <branchName>
+$ git merge <branchName>
+
+# merge a branch with message
+$ git merge <branchName> -m "Your merge message"
 
 # rebase onto a branch
 $ git rebase <branchName>

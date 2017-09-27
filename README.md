@@ -103,7 +103,7 @@ $ git commit -m 'Your comment'
 #### Amending previous commit comment
 
 ```sh
-$ git commit --amend 'New commit message'
+$ git commit --amend -m 'New commit message'
 ```
 
 #### Checking status

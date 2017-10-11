@@ -69,6 +69,24 @@ $ git fetch
 $ git checkout <branchName>
 ```
 
+#### Rename a branch
+
+```sh
+$ git branch -m <newBranchName>
+$ git branch -m <oldBranchName> <newBranchName>
+```
+
+#### Rename a remote branch
+
+```sh
+# rename locally
+$ git branch -m <oldBranchName> <newBranchName>
+# delete old remote branch
+$ git push <remote> :<oldBranchName>
+# push new branch to remote
+$ git push <remote> <newBranchName>
+```
+
 #### Show branches
 
 ```sh

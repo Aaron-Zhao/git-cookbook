@@ -301,6 +301,12 @@ $ git rebase --skip
 $ git push -f <remote> <branchName>
 # force with lease otherwise
 $ git push --force-with-lease <remote> <branchName>
+
+# revert rebase
+# reference log
+$ git reflog
+# reset to the place right before your rebase
+$ git reset --hard HEAD@{x}
 ```
 
 #### Cherry Pick
@@ -335,6 +341,16 @@ $ git push <remoteAlias> -- tags
 
 # check a branch at a tag
 $ git checkout -b <branchName> <tagName>
+
+# reset to tag
+$ git tag BACKUP
+$ git reset --hard BACKUP
+
+# delete local tag
+$ git tag -d TAG
+
+# delete remote tag
+$ git push --delete origin TAG
 ```
 
 #### Logs

@@ -138,6 +138,13 @@ $ git push <remoteAliasName> <localBranchName>
 
 #### .gitignore
 
+```sh
+# To remove all ignored but staged files
+git rm -r --cached .
+git add .
+git commit -m "Removing all files in .gitignore"
+```
+
 Ignoring files (not to be checked in git), refer to [this docs](https://git-scm.com/docs/gitignore) for more details.
 
 ---

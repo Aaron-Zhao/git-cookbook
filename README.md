@@ -171,6 +171,23 @@ $ git reset HEAD~<x>
 
 # push undo to remote
 $ git revert HEAD
+
+# remove untracked files
+# to see what files will be deleted
+$ git clean -n
+
+# delete untracked files
+$ git clean -f
+
+# delete directories
+$ git clean -fd
+
+# delete ignored files
+$ git clean -fX
+
+# delete ignored and non-ignored files
+$ git clean -fx
+
 ```
 
 #### Revert

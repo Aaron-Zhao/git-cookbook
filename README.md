@@ -360,8 +360,11 @@ $ git tag -a v1.4 -m "my version 1.4"
 # create and attach to a specific commit
 $ git tag -a <tagName> <commitId>
 
+# push a tag
+$ git push <remoteAlias> <tagName>
+
 # push all tags
-$ git push <remoteAlias> -- tags
+$ git push <remoteAlias> --tags
 
 # check a branch at a tag
 $ git checkout -b <branchName> <tagName>

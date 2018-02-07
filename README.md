@@ -270,6 +270,9 @@ $ git branch -d <branchName>
 # delete branch without questioning
 $ git branch -D <branchName>
 
+# delete remote branch
+$ git push -d <remote> <branchName>
+
 # push local branch to remote
 $ git push <remote> <branchName>
 

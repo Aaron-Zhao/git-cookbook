@@ -336,6 +336,17 @@ $ git reflog
 $ git reset --hard HEAD@{x}
 ```
 
+#### Strategies for grandchildren branches to rebase onto a grandparent branch (with parent merged)
+
+```sh
+# sometimes you would want to branch off a feature branch to do more work that depends on it, while waiting for this feature branch to be reviewed and merged into its parent branch. But what to do after this feature branch is merged into its parent.
+
+# 1. you can make a new branch off the grandparent branch (e.g. master), and cherry pick all the changes you made from your working branch.
+# 2. squash all commits of the feature branch into the first commit of your working branch and rebase onto master. This will keep the history clean.
+# Notice: potentially master could have some changes made in the places where the feature branch has made changes, and this strategy will overwirte all the changes made by the master in these places. If this is the case, strategy 1. should be used.
+
+```
+
 #### Cherry Pick
 
 ```sh

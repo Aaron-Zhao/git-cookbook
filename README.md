@@ -350,7 +350,12 @@ $ git reset --hard HEAD@{x}
 #### Cherry Pick
 
 ```sh
+# cherry pick commit 
 $ git cherry-pick <commit>
+
+# resolve conflicts and commit if any
+$ git add --all
+$ git commit -m "your msg"
 ```
 
 For advanced cherry-pick refer to [this docs](https://git-scm.com/docs/git-cherry-pick) for more details.

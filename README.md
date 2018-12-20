@@ -385,6 +385,10 @@ $ git push <remoteAlias> <tagName>
 # push all tags
 $ git push <remoteAlias> --tags
 
+# pull all tags
+git fetch origin --tags
+git fetch --all --tags --prune
+
 # check a branch at a tag
 $ git checkout -b <branchName> <tagName>
 
